@@ -415,3 +415,6 @@ button.carrossel {
     font-size: 30px;
     cursor: pointer;
 }
+.tradutor {
+    justify-items: right;
+}
