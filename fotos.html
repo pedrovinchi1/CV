@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Currículo</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Open+Sans:200,300,400,700,800,900&subset=latin" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pedro Henrique Ferreira Vinchi</h1>
+        <img src="minhafoto2.jpg" alt="Foto Pessoal" class="foto-perfil">
+        <p>Inteligência Artificial | Análise de Dados</p>
+    </header>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="sobre.html">Sobre Mim</a></li>
+            <li><a href="fotos.html">Fotos</a></li>
+            <li><a href="projetos.html">Meus Projetos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <section class="sobre">
+        <h1>Minhas Fotos</h1>
+        <section class="carrossel">
+            <section class="foto">
+                <div class="imagefoto-container">
+                <img src="C:\Users\pedro\Desktop\Curriculo\Fotos\Eu\1.jpg" alt="Imagem do Imóvel 1" class="carrossel-image active">
+                <img src="C:\Users\pedro\Desktop\Curriculo\Fotos\Eu\2.jpg" alt="Imagem do Imóvel 2" class="carrossel-image">
+                <img src="C:\Users\pedro\Desktop\Curriculo\Fotos\Eu\3.jpg" alt="Imagem do Imóvel 3" class="carrossel-image">
+                <img src="C:\Users\pedro\Desktop\Curriculo\Fotos\Eu\4.jpg" alt="Imagem do Imóvel 4" class="carrossel-image">
+                <img src="C:\Users\pedro\Desktop\Curriculo\Fotos\Eu\5.jpg" alt="Imagem do Imóvel 5" class="carrossel-image">
+                <img src="C:\Users\pedro\Desktop\Curriculo\Fotos\Eu\6.jpg" alt="Imagem do Imóvel 6" class="carrossel-image">
+                <img src="C:\Users\pedro\Desktop\Curriculo\Fotos\Eu\7.jpg" alt="Imagem do Imóvel 7" class="carrossel-image">
+                <img src="C:\Users\pedro\Desktop\Curriculo\Fotos\Eu\8.jpg" alt="Imagem do Imóvel 8" class="carrossel-image">
+                <img src="C:\Users\pedro\Desktop\Curriculo\Fotos\Eu\9.jpg" alt="Imagem do Imóvel 9" class="carrossel-image">
+                <img src="C:\Users\pedro\Desktop\Curriculo\Fotos\Eu\10.jpg" alt="Imagem do Imóvel 10" class="carrossel-image">
+                <img src="C:\Users\pedro\Desktop\Curriculo\Fotos\Eu\11.jpg" alt="Imagem do Imóvel 11" class="carrossel-image">
+                </div> 
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>      
+            </section>
+        </section>
+    </section>
+
+    <section class="sobre">
+        <h1>Família</h1>
+            <section class="galeria">
+                    <img id="familia-1" src="C:\Users\pedro\Desktop\Curriculo\Fotos\Família\1.jpg" alt="Imagem da Família 1" onclick="expandirImagem(this)">
+                    <img id="familia-2" src="C:\Users\pedro\Desktop\Curriculo\Fotos\Família\2.jpg" alt="Imagem da Família 2" onclick="expandirImagem(this)">
+                    <img id="familia-3" src="C:\Users\pedro\Desktop\Curriculo\Fotos\Família\3.jpg" alt="Imagem da Família 3" onclick="expandirImagem(this)">
+                    <img id="familia-4" src="C:\Users\pedro\Desktop\Curriculo\Fotos\Família\4.jpg" alt="Imagem da Família 4" onclick="expandirImagem(this)">
+                    <img id="familia-5" src="C:\Users\pedro\Desktop\Curriculo\Fotos\Família\5.jpg" alt="Imagem da Família 5" onclick="expandirImagem(this)">
+                    <img id="familia-6" src="C:\Users\pedro\Desktop\Curriculo\Fotos\Família\6.jpg" alt="Imagem da Família 6" onclick="expandirImagem(this)">
+                    <img id="familia-7" src="C:\Users\pedro\Desktop\Curriculo\Fotos\Família\7.jpg" alt="Imagem da Família 7" onclick="expandirImagem(this)">
+                    <img id="familia-8" src="C:\Users\pedro\Desktop\Curriculo\Fotos\Família\8.jpg" alt="Imagem da Família 8" onclick="expandirImagem(this)">
+                    <img id="familia-9" src="C:\Users\pedro\Desktop\Curriculo\Fotos\Família\9.jpg" alt="Imagem da Família 9" onclick="expandirImagem(this)">
+                    <img id="familia-10" src="C:\Users\pedro\Desktop\Curriculo\Fotos\Família\10.jpg" alt="Imagem da Família 10" onclick="expandirImagem(this)"> 
+            </section>     
+    </section>  
+    <div id="imagem-ampliada" class="imagem-ampliada" onclick="fecharImagem()">
+        <span class="fechar" onclick="fecharImagem()">&times;</span>
+        <img id="imagem-ampliada-src" src="" alt="Imagem Ampliada">
+    </div>      
+  
+
+   <section class="sobre">
+       <h1>Amigos</h1>
+           <section class="galeria">
+                   <img id="amigos-1" src="C:\Users\pedro\Desktop\Curriculo\Fotos\Amigos\1.jpg" alt="Imagem dos amigos 1" onclick="expandirImagem(this)">
+                   <img id="amigos-2" src="C:\Users\pedro\Desktop\Curriculo\Fotos\Amigos\2.jpg" alt="Imagem dos amigos 2" onclick="expandirImagem(this)">
+                   <img id="amigos-3" src="C:\Users\pedro\Desktop\Curriculo\Fotos\Amigos\3.jpg" alt="Imagem dos amigos 3" onclick="expandirImagem(this)">
+                   <img id="amigos-4" src="C:\Users\pedro\Desktop\Curriculo\Fotos\Amigos\4.jpg" alt="Imagem dos amigos 4" onclick="expandirImagem(this)">
+                   <img id="amigos-5" src="C:\Users\pedro\Desktop\Curriculo\Fotos\Amigos\5.jpg" alt="Imagem dos amigos 5" onclick="expandirImagem(this)">
+                   <img id="amigos-6" src="C:\Users\pedro\Desktop\Curriculo\Fotos\Amigos\6.jpg" alt="Imagem dos amigos 6" onclick="expandirImagem(this)">
+                   <img id="amigos-7" src="C:\Users\pedro\Desktop\Curriculo\Fotos\Amigos\7.jpg" alt="Imagem dos amigos 7" onclick="expandirImagem(this)">
+                   <img id="amigos-8" src="C:\Users\pedro\Desktop\Curriculo\Fotos\Amigos\8.jpg" alt="Imagem dos amigos 8" onclick="expandirImagem(this)">
+           </section>     
+   </section>  
+
+    <section class="sobre">
+        <h1>Projetos Sociais</h1>
+        <section class="galeria">
+            <img id="Projetos Sociais-1" src="C:\Users\pedro\Desktop\Curriculo\Fotos\Projetos Sociais\1.jpg" alt="Imagem dos Projetos Sociais 1" onclick="expandirImagem(this)">
+            <img id="Projetos Sociais-2" src="C:\Users\pedro\Desktop\Curriculo\Fotos\Projetos Sociais\2.jpg" alt="Imagem dos Projetos Sociais 2" onclick="expandirImagem(this)">
+            <img id="Projetos Sociais-3" src="C:\Users\pedro\Desktop\Curriculo\Fotos\Projetos Sociais\3.jpg" alt="Imagem dos Projetos Sociais 3" onclick="expandirImagem(this)">
+            <img id="Projetos Sociais-4" src="C:\Users\pedro\Desktop\Curriculo\Fotos\Projetos Sociais\4.jpg" alt="Imagem dos Projetos Sociais 4" onclick="expandirImagem(this)">
+            <img id="Projetos Sociais-5" src="C:\Users\pedro\Desktop\Curriculo\Fotos\Projetos Sociais\5.jpg" alt="Imagem dos Projetos Sociais 5" onclick="expandirImagem(this)">
+            <img id="Projetos Sociais-6" src="C:\Users\pedro\Desktop\Curriculo\Fotos\Projetos Sociais\6.jpg" alt="Imagem dos Projetos Sociais 6" onclick="expandirImagem(this)">
+            <img id="Projetos Sociais-7" src="C:\Users\pedro\Desktop\Curriculo\Fotos\Projetos Sociais\7.jpg" alt="Imagem dos Projetos Sociais 7" onclick="expandirImagem(this)">
+            <img id="Projetos Sociais-8" src="C:\Users\pedro\Desktop\Curriculo\Fotos\Projetos Sociais\8.jpg" alt="Imagem dos Projetos Sociais 8" onclick="expandirImagem(this)">
+            <img id="Projetos Sociais-9" src="C:\Users\pedro\Desktop\Curriculo\Fotos\Projetos Sociais\9.jpg" alt="Imagem dos Projetos Sociais 9" onclick="expandirImagem(this)">
+            <img id="Projetos Sociais-10" src="C:\Users\pedro\Desktop\Curriculo\Fotos\Projetos Sociais\10.jpg" alt="Imagem dos Projetos Sociais 10" onclick="expandirImagem(this)">
+            <img id="Projetos Sociais-11" src="C:\Users\pedro\Desktop\Curriculo\Fotos\Projetos Sociais\11.jpg" alt="Imagem dos Projetos Sociais 11" onclick="expandirImagem(this)">
+            <img id="Projetos Sociais-12" src="C:\Users\pedro\Desktop\Curriculo\Fotos\Projetos Sociais\12.jpg" alt="Imagem dos Projetos Sociais 12" onclick="expandirImagem(this)">
+            <img id="Projetos Sociais-13" src="C:\Users\pedro\Desktop\Curriculo\Fotos\Projetos Sociais\13.jpg" alt="Imagem dos Projetos Sociais 13" onclick="expandirImagem(this)">
+            <img id="Projetos Sociais-14" src="C:\Users\pedro\Desktop\Curriculo\Fotos\Projetos Sociais\14.jpg" alt="Imagem dos Projetos Sociais 14" onclick="expandirImagem(this)">
+            <img id="Projetos Sociais-15" src="C:\Users\pedro\Desktop\Curriculo\Fotos\Projetos Sociais\15.jpg" alt="Imagem dos Projetos Sociais 15" onclick="expandirImagem(this)">
+            <img id="Projetos Sociais-16" src="C:\Users\pedro\Desktop\Curriculo\Fotos\Projetos Sociais\16.jpg" alt="Imagem dos Projetos Sociais 16" onclick="expandirImagem(this)">
+            <img id="Projetos Sociais-17" src="C:\Users\pedro\Desktop\Curriculo\Fotos\Projetos Sociais\17.jpg" alt="Imagem dos Projetos Sociais 17" onclick="expandirImagem(this)">
+            <img id="Projetos Sociais-18" src="C:\Users\pedro\Desktop\Curriculo\Fotos\Projetos Sociais\18.jpg" alt="Imagem dos Projetos Sociais 18" onclick="expandirImagem(this)">
+            <img id="Projetos Sociais-19" src="C:\Users\pedro\Desktop\Curriculo\Fotos\Projetos Sociais\19.jpg" alt="Imagem dos Projetos Sociais 19" onclick="expandirImagem(this)">       
+        </section>
+    </section>
+
+    <script src="scriptfoto.js"></script>
+
+</body>
+</html>

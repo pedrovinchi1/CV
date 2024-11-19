@@ -9,6 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+    
 }
 
 header {
@@ -16,7 +17,7 @@ header {
     height: 100%;
     background: #e17e04;
     color: white;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
     box-sizing: border-box;
 }
@@ -24,7 +25,6 @@ header {
 sub {
     font-size: larger;
     text-align:center;
-    
     color: #e17e04;
     text-shadow: 
         -1px -1px 0 #f3f3f3, 
@@ -63,8 +63,9 @@ sub {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 30px;
+    margin: 10px;
     padding-left: 10px;
+    overflow: hidden;
 }
 
 .galeria img {
@@ -255,4 +256,162 @@ footer {
     height: auto; 
     border-radius: 8px; 
     transition: transform 0.3s
+}
+.carrossel {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+    max-width: 600px; /* Ajuste conforme necessário */
+    margin: auto;
+    overflow: hidden; /* Oculta imagens fora do contêiner */
+    border: 2px solid #ccc; /* Opcional: borda ao redor do carrossel */
+    border-radius: 8px; /* Opcional: bordas arredondadas */
+}
+
+.carrossel-container {
+    width: 100%;
+    max-width: 800px; /* Ajuste o tamanho do carrossel conforme necessário */
+    margin: 0 auto;
+    overflow: hidden; /* Esconde as imagens que não estão visíveis */
+}
+.carrossel-image {
+    min-width: 100%; /* Cada imagem ocupa 100% do contêiner */
+    display: none; /* Oculta todas as imagens inicialmente */
+}
+
+.carrossel-image.active {
+    display: block; /* Apenas a imagem ativa é exibida */
+}
+.imagem-principal {
+    width: 80%;
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Bordas arredondadas */
+    transition: opacity 0.5s ease; /* Efeito de transição suave */
+}
+
+.miniaturas {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.miniatura {
+    width: 100px; /* Tamanho das miniaturas */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 0 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.miniatura:hover {
+    border-color: #007BFF; /* Cor da borda ao passar o mouse */
+} 
+
+.image-container {
+    overflow: hidden; /* Esconde as imagens que saem do contêiner */
+    position: relative; /* Para permitir a animação */
+    width: 100%; /* Para ocupar toda a largura da tela */
+    height: 200px; /* Defina uma altura adequada para suas imagens */
+}
+
+.image-wrapper {
+    display: flex; /* Para alinhar as imagens lado a lado */
+    width: 100%; /* Ajuste conforme necessário */
+}
+
+.animated-image {
+    width: 100px; /* Ajuste o tamanho das imagens conforme necessário */
+    height: auto; /* Mantém a proporção das imagens */
+    margin-right: 10px; /* Espaço entre as imagens */
+
+}
+.log {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1px;
+    padding-left: 10px;
+    overflow: hidden;
+}
+
+.log img {
+    width: 100%;
+    height: 125px;
+    margin: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.log img:hover {
+    transform: scale(1.1);
+}
+.foto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+    padding-left: 10px;
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+
+.foto img {
+    width: 100%;
+    height: 95%;
+    margin: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.foto img:hover {
+    transform: scale(1.1);
+}
+.prev {
+    left: 10px; /* Posição do botão anterior */
+}
+
+.next {
+    right: 10px; /* Posição do botão próximo */
+}
+button.carrossel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente */
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+.imagefoto-container {
+   display: flex;
+}
+.imagem-ampliada {
+    display: none; /* Inicialmente escondido */
+    position: fixed; /* Fica fixo na tela */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro semi-transparente */
+    justify-content: center; /* Centraliza a imagem */
+    align-items: center; /* Centraliza a imagem */
+    z-index: 1000; /* Fica acima de outros elementos */
+}
+
+.imagem-ampliada img {
+    max-width: 80%; /* Largura máxima da imagem ampliada */
+    max-height: 80%; /* Altura máxima da imagem ampliada */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+.fechar {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
 }
