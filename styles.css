@@ -129,7 +129,7 @@ footer {
     max-width: 100%; 
     max-height: 100%;
     display: flex;
-    background-color: #f8f8f800; /* Cor de fundo do menu */
+    background-color: #00000000; /* Cor de fundo do menu */
     padding: 10px; /* Espaçamento interno */
     border-radius: 0px; /* Bordas arredondadas */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0); /* Sombra para dar profundidade */
