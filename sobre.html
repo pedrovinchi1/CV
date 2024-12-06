@@ -8,32 +8,35 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="tradutor">
-        <div id="google_translate_element"></div>
-            <script type="text/javascript">
-            function googleTranslateElementInit() {
-              new google.translate.TranslateElement(
-                {pageLanguage: 'pt', includedLanguages: 'en,es,fr,it,de,ko,ru,zh-TW', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL},
-                'google_translate_element'
-              );
-            }
-    </script>
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    </div>
-        <h1>Pedro Henrique Ferreira Vinchi</h1>
-        <img src="minhafoto2.jpg" alt="Foto Pessoal" class="foto-perfil">
-        <p>Inteligência Artificial | Análise de Dados</p> 
-    </header>
-    <nav class="menu">
+    <header class="full_page nav-fixed" id="page-header" style="background-image: url('bg.png');">    
+        <nav class="menu">
         <ul>
             <li><a href="index.html">Página Inicial</a></li>
             <li><a href="sobre.html">Sobre Mim</a></li>
             <li><a href="fotos.html">Fotos</a></li>
             <li><a href="projetos.html">Meus Projetos</a></li>
             <li><a href="contato.html">Contato</a></li>
-        </ul>
-    </nav>
+        </ul> 
+            <div class="tradutor">
+                <div id="google_translate_element"></div>
+                    <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                      new google.translate.TranslateElement(
+                        {pageLanguage: 'pt', includedLanguages: 'de,en,es,fr,it,ko,ru,zh-TW', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL},
+                        'google_translate_element'
+                      );
+                    }
+                    </script>
+        
+                    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                </div>   
+        </nav>
+        
+        <h1>Pedro Henrique Ferreira Vinchi</h1>
+        <img src="minhafoto2.jpg" alt="Foto Pessoal" class="foto-perfil">
+        <p>Inteligência Artificial | Análise de Dados</p>
+        <p>Desenvolvedor, com ênfase em modelos preditivos utilizando machine learning</p>
+    </header>
    
     <section class="sobre">
         <h2>Minha História</h2>
