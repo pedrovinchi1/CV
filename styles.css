@@ -132,7 +132,6 @@ footer {
     background-color: #00000000; /* Cor de fundo do menu */
     padding: 10px; /* Espaçamento interno */
     border-radius: 0px; /* Bordas arredondadas */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0); /* Sombra para dar profundidade */
     box-sizing: border-box;
 }
 
@@ -424,7 +423,7 @@ button.carrossel {
 }
 .tradutor {
     display: flex;
-    justify-items: flex-end;
+
 }
 .galeria2 {
     display: flex;
